@@ -21,9 +21,27 @@ int [] array = GetArray(size, -9, 9);// объявили переменную и
 
    int [] GetArray (int size, int min, int max){
     int[ ] result = new int [size];
-    
+
     for (int i =0; i < size; i++){
         result [i] = new Random().Next(min, max + 1);
     }
     return result;
    }
+   /*
+   Console.Clear();
+   Console.Write("Массив: ");
+   int [] rand = new int[12];
+   int sumPositive = 0;
+   int sumNegative = 0;
+   for (int i =0; i < rand.Length; i++){
+    rand[i] = new Random().Next(-9, 10);
+    Console.Write(rand[i]+" ");
+    if (rand[i] > 0)
+    sumPositive += rand[i];
+    if (rand[i] < 0)
+    sumNegative += rand [i];
+   }
+   Console.WriteLine();
+   Console.WriteLine($"Сумма положительных {sumPositive }");
+   Console.WriteLine($"Сумма отрицательных {sumNegative }");
+   */
